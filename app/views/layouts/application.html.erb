@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quadra de Futebol</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div id="menu":>
+    <%= link_to "Usuarios", users_path %>
+    <%= link_to "Partidas", partidas_path %>
+    <%= link_to "Participantes", participantes_path %>
+
+    <%= yield %>
+  </body>
+</html>

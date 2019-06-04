@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @partida.id %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @partida.Data %>
+</p>
+
+<p>
+  <strong>Local:</strong>
+  <%= @partida.Local %>
+</p>
+
+<p>
+  <strong>Horario:</strong>
+  <%= @partida.Horario %>
+</p>
+
+<p>
+  <strong>Jogadores:</strong>
+  <%= @partida.user %>
+</p>
+
+<%= link_to 'Editar', edit_partida_path(@partida) %> |
+<%= link_to 'Voltar', partidas_path %>
